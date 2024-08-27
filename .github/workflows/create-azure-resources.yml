@@ -17,7 +17,7 @@ jobs:
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
-        resourceGroupName: '$AZURE_RG'
+        resourceGroupName: $AZURE_RG
         template: ./config/main.bicep
         parameters: 'namePrefix=$AZURE_PREFIX'
         failOnStdErr: false
