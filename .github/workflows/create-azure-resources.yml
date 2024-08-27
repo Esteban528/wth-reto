@@ -19,5 +19,5 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ vars.AZURE_RG }}
         template: ./config/main.bicep
-        parameters: 'namePrefix=${{AZURE_PREFIX}}'
+        parameters: 'namePrefix=$AZURE_PREFIX'
         failOnStdErr: false
